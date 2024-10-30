@@ -1,0 +1,5 @@
+restaL([], 0).
+restaL([PrimerE, SegE | Resto], RestaA) :-
+    RestaInter is PrimerE - SegE,
+        restaL([RestaInter | Resto], RestaA).
+
